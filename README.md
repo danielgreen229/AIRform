@@ -1,4 +1,8 @@
-# front
+# AIR frontend vue
+# using technologies
+`sass`, `pud`
+
+
 
 ## Project setup
 ```
