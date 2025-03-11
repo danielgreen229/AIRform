@@ -22,7 +22,7 @@ export default {
       try {
         await axios({
           method: 'post',
-          url: 'http://localhost:3000/air/get-address',
+          url: 'https://life30server.ru/air/get-address',
           data: { query: data }
         }).then((res)=>{
           let result = res.data

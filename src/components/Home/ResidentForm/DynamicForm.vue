@@ -148,7 +148,6 @@ export default {
 			return 'Минимум 1 тип помещения'
 		},
 		validateRangeField (e, val) {
-			console.log(val.form[val.field], val.form[val.field + '_2'], val.form)
 			let arr = [new Date(val.form[val.field]), new Date(val.form[val.field + '_2'])]
 
 			if(arr[0] < arr[1] && val.form[val.field] != '' && val.form[val.field + '_2'] != '') return true
@@ -170,7 +169,6 @@ export default {
 			}
 		},
 		onSubmit (values) {
-			console.log('zxczxc', values)
 			alert('Спасибо за заявку. Данные отправлены!')
 			this.$store.dispatch('SEND_DATA', values)
 		},
